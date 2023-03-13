@@ -9,10 +9,11 @@ Console.Clear();
     {
         array[i] = Random.Shared.Next(0,11);
     }
-Console.WriteLine($"Your random array = {string.Join(";",array)}");
+Console.WriteLine($"Your array = {string.Join(";",array)}");
 
 int MaxNumber(int[] a)
 {
+
     int max = 0;
     for (int i = 0; i < a.Length; i++)
     {
@@ -39,4 +40,4 @@ int MinNumber(int[] b)
 Console.WriteLine($" MAX = {Maxnum}");
 int MinNum = MinNumber(array);
 Console.WriteLine($" MIN = {MinNum}");
-Console.WriteLine($" difference max min   = {Maxnum  - MinNum}");
+Console.WriteLine($" difference min max   = {Maxnum  - MinNum}");
